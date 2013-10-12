@@ -67,7 +67,7 @@ if (age = abc);
     else;
         System.out.println() rankingList;
 
-
+        return mainMenu;
 }
 
 

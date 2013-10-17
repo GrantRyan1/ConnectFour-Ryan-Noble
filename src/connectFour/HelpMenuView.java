@@ -47,7 +47,7 @@ public class HelpMenuView {
                    this.helpMenuControl.displayComputerHelp();
                    break;
                case "O":
-                   this.helpMenuControl.displayGameObjectice();
+                   this.helpMenuControl.displayGameObjective();
                    break;
                case "P":
                    this.helpMenuControl.displayRegularPlayer();

@@ -95,7 +95,7 @@ public class HelpMenuView {
     }
     //determine if command is valid
     private boolean validCommand(String command) {
-        String[][] items = HelpMenuView.menuItems;
+       
         
         for (String[] item : HelpMenuView.menuItems) {
             if (item[0].equals(command)) {

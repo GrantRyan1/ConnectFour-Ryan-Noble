@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package mainmenu.java;
+package connectFour;
 
 import java.util.Scanner;
 
@@ -47,7 +47,7 @@ public class HelpMenuView {
                    this.helpMenuControl.displayComputerHelp();
                    break;
                case "O":
-                   this.helpmenuControl.displayGameObjectice();
+                   this.helpMenuControl.displayGameObjectice();
                    break;
                case "P":
                    this.helpMenuControl.displayRegularPlayer();
@@ -78,7 +78,7 @@ public class HelpMenuView {
                 //gets the command from the user input
     protected final String getCommand() {
         
-        Scanner inFile = 
+        Scanner inFile = ConnectFour.getInputFile();
         
         String command;
         boolean valid = false;
@@ -95,8 +95,7 @@ public class HelpMenuView {
             if (item[0].equals(command)) {
                 return true;
             }
-              return false;                
-                
-  }
+       }
+        return false;
  }
 }

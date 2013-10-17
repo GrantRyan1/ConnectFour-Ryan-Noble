@@ -83,9 +83,15 @@ public class HelpMenuView {
         String command;
         boolean valid = false;
         do {
-            
-            
-        }
+            command = inFile.nextLine();
+            command = command.trim().toUpperCase();
+            valid = validCommand(command);
+            if (!validCommand(command)) {
+                new ConnectFourError().displayError("Invalid input. Enter valid input.");
+                continue;
+            }
+        }while (!valid);
+        return command;
     }
     //determine if command is valid
     private boolean validCommand(String command) {

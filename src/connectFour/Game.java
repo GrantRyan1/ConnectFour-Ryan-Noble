@@ -9,5 +9,6 @@ package connectFour;
  * @author Ryan
  */
 class Game {
+    static String PLAYING;
     
 }

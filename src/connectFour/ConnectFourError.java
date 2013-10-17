@@ -4,15 +4,16 @@
  */
 package connectFour;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Ryan
  */
-class ConnectFour {
+class ConnectFourError {
 
-    static Scanner getInputFile() {
+    public ConnectFourError() {
+    }
+
+    void displayError(String invalid_input_Enter_valid_input) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

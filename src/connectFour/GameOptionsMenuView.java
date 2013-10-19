@@ -8,10 +8,9 @@ package connectFour;
  *
  * @author Ryan
  */
-class Game {
-    static String PLAYING;
+class GameOptionsMenuView {
 
-    Board getBoard() {
+    void getInput(Game game) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

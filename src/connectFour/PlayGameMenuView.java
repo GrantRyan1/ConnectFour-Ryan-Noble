@@ -42,19 +42,19 @@ public class PlayGameMenuView {
             String command = this.getCommand();
             switch(command) {
                 case "T":
-                    this.PlayGameMenuControl.takeTurn();
+                    this.playGameMenuControl.takeTurn();
                     break;
                 case "D":
-                    PlayGameMenuControl.displayBoard();
+                    playGameMenuControl.displayBoard();
                     break;
                 case "N":
-                    PlayGameMenuControl.startNewGame();
+                    playGameMenuControl.startNewGame();
                     break;
                 case "O":
-                    PlayGameMenuControl.displayOptionsMenu();
+                    playGameMenuControl.displayOptionsMenu();
                     break;
                 case "H":
-                    PlayGameMenuControl.displayHelpMenu();
+                    playGameMenuControl.displayHelpMenu();
                     break;
                 case "Q":
                     gameStatus = "QUIT";

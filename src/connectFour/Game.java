@@ -10,6 +10,7 @@ package connectFour;
  */
 class Game {
     static String PLAYING;
+    static Object QUIT;
 
     Board getBoard() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

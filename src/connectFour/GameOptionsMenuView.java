@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class GameOptionsMenuView {
 
     private Game game;
-    private GameOptionsControl gameOptionsControl = new GameOptionsControl();
+    private GameOptionsMenuControl gameOptionsControl = new GameOptionsMenuControl();
     
     private final static String[][] menuItems = {
         {"1", "Change Marker of the First Player"},
@@ -21,6 +21,7 @@ public class GameOptionsMenuView {
         {"D", "Change the dimensions of the board"}, 
         {"Q", "Return to Game Menu"}
     };
+    private Object gameOptionsMenuControl;
     
     public GameOptionsMenuView() {
        }

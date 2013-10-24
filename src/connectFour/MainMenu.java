@@ -10,10 +10,10 @@ import java.util.Scanner;
  *
  * @author Ryan
  */
-public class MainMenuJava {
+       public class MainMenu {
         private static final String PLAYER_A_DEFAULT_MARKER = "X";
         private static final String PLAYER_B_DEFAULT_MARKER = "O";
-        
+
         
         public Game create(String gameType) {
         Game game = null;
@@ -38,11 +38,11 @@ public class MainMenuJava {
         game.setPlayerA(playerA);
         game.setPlayerB(playerB);
         
-        game.setStatus(Game.CONTINUE);
-        
+                
         return game;
     } 
-    
+            return null;
+   }
         private String quitGame() {
         System.out.println("\n\tAre you sure? (Y or N)");
         Scanner inFile = new Scanner(System.in);
@@ -55,10 +55,4 @@ public class MainMenuJava {
     }
 }
             
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        
-    }
-}
+    

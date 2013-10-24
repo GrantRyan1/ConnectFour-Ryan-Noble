@@ -33,7 +33,7 @@ public class GameOptionsMenuControl {
         }
 
    
-        if (game.getPlayerA().getMarker().equals(game.getPlayerB().getMarker())) {
+        if (game.getPlayerA().equals(game.getPlayerB())) {
             new ConnectFourError().displayError("Both players can not use the same character for a marker.");
             return false;
         }
@@ -86,7 +86,7 @@ public class GameOptionsMenuControl {
         
         // change the size board
         Player[][] boardLocations = new Player[boardRowCount][boardColumnCount];
-        this.game.getBoard().getDimensions().setLocation(boardRowCount, boardRowCount);
+        this.game.getBoard().getDimensions();
         
         
         Dimension boardDimensions = new Dimension(boardRowCount, boardColumnCount);
@@ -102,3 +102,5 @@ public class GameOptionsMenuControl {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
+
+    

@@ -27,7 +27,7 @@ public class GameOptionsMenuView {
        }
    
     
-    public String getInput(Object object) {
+    public Object getInput(Object object) {
         this.game = (Game) object;
         this.gameOptionsControl.setGame(game);
         

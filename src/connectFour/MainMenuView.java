@@ -25,7 +25,7 @@ public class MainMenuView {
         
     }
     
-    public String getInput(Object object) {
+    public void getInput() {
         
         String gameStatus = Game.PLAYING;
         do {
@@ -41,20 +41,21 @@ public class MainMenuView {
                     this.mainMenuControl.startGame(2);
                     break;
                 case "H":
-                    HelpMenuView helpMenu = ConnectFour.getHelpMenu();
-                    helpMenu.getInput();
-                    break;
+                  this.mainMenuControl.displayHelpMenu();
+                 // HelpMenuView helpMenu = ConnectFour.getHelpMenu();
+                 // helpMenu.getInput();
+                     break;
                 case "X":
-                    return Game.EXIT;
+                    break;
             }
         }  while (!gameStatus.equals("QUIT"));
          
-        return "QUIT";
+        return;
 }
     
 public final String getCommand() {
 
-        Scanner inFile = ConnectFour.getInputFile();
+        Scanner inFile = ConnectFour.getInput();
         String command;
         boolean valid = false;
         do{

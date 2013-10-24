@@ -25,7 +25,7 @@ public class PlayGameMenuControl {
     }
     
     public void displayBoard() {
-        System.out.println("\n\tdiaplyBoard() called");
+        System.out.println("\n\tdisplayBoard() called");
     }
     
     public void startNewGame() {

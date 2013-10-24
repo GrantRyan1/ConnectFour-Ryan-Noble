@@ -14,8 +14,10 @@ class Game {
     static Object ONE_PLAYER;
     static Object TWO_PLAYER;
     static String EXIT;
+    static Object Playing;
     String PLAYER_A_DEFAULT_MARKER;
     String PLAYER_B_DEFAULT_MARKER;
+    Object setStatus;
 
     Game(Object ONE_PLAYER) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

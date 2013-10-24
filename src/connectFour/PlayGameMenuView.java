@@ -25,6 +25,7 @@ public class PlayGameMenuView {
         {"H", "Help"},
         {"Q", "QUIT"}
     };
+    private Object gameStatus;
       
     public PlayGameMenuView(Game game) {
         this.playGameMenuControl = new PlayGameMenuControl(game);
@@ -97,7 +98,7 @@ public class PlayGameMenuView {
             command = inFile.nextLine();
             command = command.trim().toUpperCase();
             valid = validCommand(command);
-            if (!validCommand(command)) {
+            if (!valid) {
                 new ConnectFourError().displayError("Invalid command. Please enter a valid command.");
                 continue;
             }
@@ -107,14 +108,3 @@ public class PlayGameMenuView {
         return command;
     }
 }
-
-
-
-
-
-
-
-
-
-
-

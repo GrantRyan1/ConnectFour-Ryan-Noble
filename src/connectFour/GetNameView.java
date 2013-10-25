@@ -55,7 +55,3 @@ public class GetNameView {
         return playerName;
     }
 }          
-  
-        
-        
-

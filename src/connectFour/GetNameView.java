@@ -22,7 +22,7 @@ public class GetNameView {
         
         
         public String getInput() {
-            String playerName = null
+            String playerName = null;
             
             boolean valid= false;
             
@@ -34,7 +34,7 @@ public class GetNameView {
                 Scanner inFile = ConnectFour.getInputFile();
                 
                 
-               if(!playerName.length() =< 20) {     
+               if (playerName.length() > 20) {     
                       new ConnectFourError().displayError(
                            "Name must be less than 20 characters."
                            + "Enter a shorter name please.");
@@ -48,12 +48,12 @@ public class GetNameView {
                            + "No symbols or numbers. Try again.");
                    continue;
                } 
-               
-               System.out.println(playerName);
-                              
-    }          
+                       
+         }          
         
-  }
+            
+        return playerName;
+    }
 }          
   
         

@@ -34,13 +34,13 @@ public class PlayGameMenuControl {
     }
     
     public void displayOptionsMenu() {
-        GameOptionsMenuView gameOptionsMenu = ConnectFour.getGameOptionsMenu();
+        GameOptionsMenuView gameOptionsMenu = ConnectFour.gameOptionsMenuView();
         gameOptionsMenu.getInput(this.game);
     }
     
     
     public void displayHelpMenu() {
-        HelpMenuView helpMenu = ConnectFour.getHelpMenu();
+        HelpMenuView helpMenu = ConnectFour.helpMenu();
         helpMenu.getInput();
     }
     

@@ -55,7 +55,7 @@ public class MainMenuView {
     
 public final String getCommand() {
 
-        Scanner inFile = ConnectFour.getInput();
+        Scanner inFile = ConnectFour.getInputFile();
         String command;
         boolean valid = false;
         do{

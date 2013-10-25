@@ -25,34 +25,38 @@ public class GetNameView {
             String playersName = null;
             
             
-            boolean valid= false;
+            boolean valid = false;
             
             while (!valid){
-                    System.out.println("\n\t= player.getName()"
+                    System.out.println("\n\t" + player.getName()
                     + ",Enter Player Name.");
                
              playerName = in.nextLine();           
                     
-             if(playerName.length() =< 20);     
+             if(playerName.length() =< 20);    
                    continue;   
-                 
+            
                  
             String regExpressionPattern = [a-z A-Z];
             if (!playerName[0-20].matches(regExpressionPattern)) {
                 new ConnectFourError().displayError(
                         "You must enter only letters; either upper or lower case."
                         + "No symbols or numbers. Try again.");
-                continue;
+                 continue;
+                 
+                 return true;
              }
+            
             System.out.println(playerName);
             
            
                             
     }
             
-}
+
            
   
         
         
 
+}

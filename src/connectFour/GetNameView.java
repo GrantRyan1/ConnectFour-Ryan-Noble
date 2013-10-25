@@ -21,42 +21,37 @@ public class GetNameView {
         }
         
         
-        public String getInput(Player player) {
-            String playersName = null;
+        public String getInput() {
+            String playerName = null;
             
-            
-            boolean valid = false;
+            boolean valid= false;
             
             while (!valid){
-                    System.out.println("\n\t" + player.getName()
+                System.out.println("\n\t= player.getName()"
                     + ",Enter Player Name.");
                
-             playerName = in.nextLine();           
-                    
-             if(playerName.length() =< 20);    
-                   continue;   
+             
+                Scanner inFile = ConnectFour.getInputFile();
+                
+                
+               if (playerName.length() > 20) {     
+                      new ConnectFourError().displayError(
+                           "Name must be less than 20 characters."
+                           + "Enter a shorter name please.");
+                   continue;
+               }
+
+               String regExpressionPattern = "a-z A-Z";
+               if (!playerName.matches(regExpressionPattern)) {
+                   new ConnectFourError().displayError(
+                           "You must enter only letters; either upper or lower case."
+                           + "No symbols or numbers. Try again.");
+                   continue;
+               } 
+                       
+         }          
+        
             
-                 
-            String regExpressionPattern = [a-z A-Z];
-            if (!playerName[0-20].matches(regExpressionPattern)) {
-                new ConnectFourError().displayError(
-                        "You must enter only letters; either upper or lower case."
-                        + "No symbols or numbers. Try again.");
-                 continue;
-                 
-                 return true;
-             }
-            
-            System.out.println(playerName);
-            
-           
-                            
+        return playerName;
     }
-            
-
-           
-  
-        
-        
-
-}
+}          

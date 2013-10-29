@@ -25,7 +25,8 @@ public class ConnectFour {
     }
 
     static Scanner getInputFile() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
+        
     }
 
     static HelpMenuView helpMenu() {

@@ -4,6 +4,7 @@
  */
 package connectFour;
 
+import java.awt.Point;
 import java.util.Scanner;
 
 /**
@@ -25,7 +26,8 @@ public class MarkerLocationView {
             
             boolean valid = false;
         
-        for
+       // for
+            return null;
             
             
             

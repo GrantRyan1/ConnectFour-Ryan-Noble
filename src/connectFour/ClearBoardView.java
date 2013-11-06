@@ -10,8 +10,8 @@ package connectFour;
  */
 public class ClearBoardView {
     
-    private Object board;
-    private Object game;
+    private Board board;
+    private Game game;
     
     //explanation of code: 1st sees the board and the spots that are filled
     

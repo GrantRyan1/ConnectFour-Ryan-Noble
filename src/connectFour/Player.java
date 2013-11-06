@@ -15,7 +15,7 @@ public class Player {
 
     private String name;
     private String playerType;
-    private String marker;
+    public String marker;
     
 
 

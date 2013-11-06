@@ -42,7 +42,7 @@ public class MainMenuView {
                     break;
                 case "H":
                   this.mainMenuControl.displayHelpMenu();
-                  HelpMenuView helpMenu = ConnectFour.getHelpMenu();
+                  HelpMenuView helpMenu = ConnectFour.helpMenu();
                   helpMenu.getInput();
                      break;
                 case "X":

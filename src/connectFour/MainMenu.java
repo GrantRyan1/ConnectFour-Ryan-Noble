@@ -35,8 +35,8 @@ import java.util.Scanner;
             playerA = new Player(Player.REGULAR_PLAYER, PLAYER_A_DEFAULT_MARKER);
             playerB = new Player(Player.REGULAR_PLAYER, PLAYER_B_DEFAULT_MARKER);
             
-        game.setPlayerA(playerA);
-        game.setPlayerB(playerB);
+        game.PlayerA(playerA);
+        game.PlayerB(playerB);
         
                 
         return game;

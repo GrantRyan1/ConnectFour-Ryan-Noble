@@ -4,25 +4,42 @@
  */
 package connectFour;
 
+import java.awt.Point;
+import javax.swing.table.AbstractTableModel;
+
 /**
  *
  * @author Ryan
  */
-class Board {
+public class Board extends AbstractTableModel {
 
+    public int rowCount = 7;
+    public int columnCount = 7;
+    public Point boardDimensions = new Point();
+    public Player[][] boardLocations;
+    
     Object getDimensions() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    int getRowCount() {
+    public int getRowCount() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    int getColumnCount() {
+    public int getColumnCount() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     Player[][] getBoardLocations() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    Player[][] getMarkerLocations() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Object getValueAt(int rowIndex, int columnIndex) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

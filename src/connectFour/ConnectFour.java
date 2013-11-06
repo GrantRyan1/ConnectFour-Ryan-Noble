@@ -16,7 +16,7 @@ public class ConnectFour {
        "\n\tHello and welcome to Connect Four! The objective of this game is \n\t"
        + "to drop your playing pieces down the different slots to place them on the board \n\t"
        + "while trying to outwit your opponent in the attempt to get four pieces lined in a row. \n\t"
-       + "You can do this either horizontaly, verticaly, or diagonly. As long as you've connected four \n\t"
+       + "You can do this either horizontally, vertically, or diagonally. As long as you've connected four \n\t"
        +  "YOU WIN!\n\t";
 
     static void getInput() {

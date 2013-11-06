@@ -10,6 +10,8 @@ import java.util.Scanner;
  *
  * @author Ryan
  */
+import java.awt.Point;
+
 public class MarkerLocationView {
         private Game game;
         
@@ -25,7 +27,8 @@ public class MarkerLocationView {
             
             boolean valid = false;
         
-        for
+   //     for
+            return null;
             
             
             

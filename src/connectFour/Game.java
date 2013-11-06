@@ -18,6 +18,8 @@ class Game {
     String PLAYER_A_DEFAULT_MARKER;
     String PLAYER_B_DEFAULT_MARKER;
     Object setStatus;
+    Player PlayerA;
+    Player PlayerB;
 
     Game(Object ONE_PLAYER) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -27,11 +29,11 @@ class Game {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void setPlayerA(Player playerA) {
+    void PlayerA(Player playerA) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void setPlayerB(Player playerB) {
+    void PlayerB(Player playerB) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

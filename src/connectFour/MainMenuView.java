@@ -42,8 +42,8 @@ public class MainMenuView {
                     break;
                 case "H":
                   this.mainMenuControl.displayHelpMenu();
-                 // HelpMenuView helpMenu = ConnectFour.getHelpMenu();
-                 // helpMenu.getInput();
+                  HelpMenuView helpMenu = ConnectFour.helpMenu();
+                  helpMenu.getInput();
                      break;
                 case "X":
                     break;
@@ -55,15 +55,15 @@ public class MainMenuView {
     
 public final String getCommand() {
 
-        Scanner inFile = ConnectFour.getInputFile();
+        Scanner inFile = new Scanner(System.in);
         String command;
         boolean valid = false;
         do{
             command = inFile.nextLine();
             command = command.trim().toUpperCase();
             valid = validCommand(command);
-            if (!vaildCommand(command));
-            if (!vaildCommand(command)) {
+            if (!validCommand(command));
+            if (!validCommand(command)) {
                 new ConnectFourError().displayError("Invalid command. Please enter a vaild command.");
                    continue;
                }

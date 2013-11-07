@@ -21,17 +21,22 @@ public class MainMenuControl {
         
         Game game;
         if (noPlayers == 1) {
-            game = this.create("ONE_PLAYER");
+            game = this.createGame("ONE_PLAYER");
         }
         else {
-            game = this.create("TWO_PLAYER");
+            game = this.createGame("TWO_PLAYER");
         }
 
-        GameMenuView gameMenu = new GameMenuView(game);
+        GameOptionsMenuView gameMenu = new GameOptionsMenuView(game);
         gameMenu.getInput(game);
     }
     
-      public Game create(String gameType) {
+      /**
+     *
+     * @param gameType
+     * @return
+     */
+    public Game createGame(String gameType) {
         Game game = null;
         Player playerA = null;
         Player playerB = null;
@@ -58,15 +63,12 @@ public class MainMenuControl {
         }
         
         
-        
-        game.setPlayerA(playerA);
-        game.setPlayerB(playerB);
-        
         return game;
     }
 
-    void displayHelpMenu() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void displayHelpMenu() {
+        HelpMenuView helpMenuView = new HelpMenuView();
+        helpMenuView.getInput();
     }
 
     private static class GameMenuView {
@@ -74,9 +76,9 @@ public class MainMenuControl {
         public GameMenuView() {
         }
 
-        private GameMenuView(Game game) {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
+       
+
+      
 
         private void getInput(Game game) {
             throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

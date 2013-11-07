@@ -16,7 +16,8 @@ public class Player {
     private String name;
     private String playerType;
     public String marker;
-    
+    public int wins = 0;
+    public int losses = 0;
 
 
 

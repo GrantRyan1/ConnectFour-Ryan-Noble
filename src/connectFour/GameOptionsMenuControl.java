@@ -16,7 +16,11 @@ public class GameOptionsMenuControl {
     
     public GameOptionsMenuControl() {
     }
-    
+
+    GameOptionsMenuControl(Game game) {
+     this.game = game;   
+     this.marker = marker;
+    }
     public Game getgame() {
         return game;
     }

@@ -43,7 +43,11 @@ public ConnectFour()  {
 
 }
 
-public static void main(String[] args) {
+    /**
+     *
+     * @param args
+     */
+    public static void main(String[] args) {
         ConnectFour ConnectFour = new ConnectFour();
         ConnectFour.display();
         MainMenuView mainMenu = new MainMenuView();

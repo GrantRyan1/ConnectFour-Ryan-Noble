@@ -41,7 +41,7 @@ public class GetNameView {
                    continue;
                }
 
-               String regExpressionPattern = "a-z A-Z";
+               String regExpressionPattern = "[a-z A-Z]";
                if (!playerName.matches(regExpressionPattern)) {
                    new ConnectFourError().displayError(
                            "You must enter only letters; either upper or lower case."

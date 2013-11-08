@@ -12,26 +12,28 @@ import java.util.Scanner;
 public class MainMenuControl {
     
     
-    public void startGame(long noPlayers) {
+    public null startGame(long noPlayers) {
         
         if (noPlayers != 1  &&  noPlayers != 2) {
             new ConnectFourError().displayError("startGame wrong number of players entered.");
             return;
         }
         
-        Game game;
+        Game game = null;
         if (noPlayers == 1) {
             game = this.create("ONE_PLAYER");
         }
-        else {
+        if (noPlayers == 2) {
             game = this.create("TWO_PLAYER");
         }
-
+        else {
+            return;
+        }
         GameMenuView gameMenu = new GameMenuView(game);
         gameMenu.getInput(game);
     }
     
-      public Game create(String gameType) {
+      private Game create(String gameType) {
         Game game = null;
         Player playerA = null;
         Player playerB = null;
@@ -64,7 +66,6 @@ public class MainMenuControl {
         
         return game;
     }
-
     void displayHelpMenu() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

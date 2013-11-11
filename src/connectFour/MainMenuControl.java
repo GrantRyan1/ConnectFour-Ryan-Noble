@@ -21,7 +21,7 @@ public class MainMenuControl {
         
         Game game = null;
         if (noPlayers == 1) {
-            game = this.createGame("ONE_PLAYER");
+            game = this.create("ONE_PLAYER");
         }
         if (noPlayers == 2) {
             game = this.create("TWO_PLAYER");

@@ -11,6 +11,8 @@ import java.util.Scanner;
  *
  * @author Ryan
  */
+import java.awt.Point;
+
 public class MarkerLocationView {
         private Game game;
         
@@ -25,11 +27,9 @@ public class MarkerLocationView {
             Point location = null;
             
             boolean valid = false;
-        
-       // for
             return null;
-            
-            
+        
+
             
             
         }

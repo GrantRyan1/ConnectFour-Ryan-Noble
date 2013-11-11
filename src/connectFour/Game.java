@@ -9,17 +9,17 @@ package connectFour;
  * @author Ryan
  */
 class Game {
-    public static String PLAYING;
-    public static Object QUIT;
-    public static Object ONE_PLAYER;
-    public static Object TWO_PLAYER;
-    public static String EXIT;
-    public static Object Playing;
-    public String PLAYER_A_DEFAULT_MARKER;
-    public String PLAYER_B_DEFAULT_MARKER;
-    public Object setStatus;
-    public Player PlayerA;
-    public Player PlayerB;
+    static String PLAYING;
+    static Object QUIT;
+    static Object ONE_PLAYER;
+    static Object TWO_PLAYER;
+    static String EXIT;
+    static Object Playing;
+    String PLAYER_A_DEFAULT_MARKER;
+    String PLAYER_B_DEFAULT_MARKER;
+    Object setStatus;
+    Player PlayerA;
+    Player PlayerB;
 
     Game(Object ONE_PLAYER) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

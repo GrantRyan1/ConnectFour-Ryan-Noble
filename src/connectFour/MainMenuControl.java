@@ -26,8 +26,10 @@ public class MainMenuControl {
         if (noPlayers == 2) {
             game = this.create("TWO_PLAYER");
         }
-
-        GameOptionsMenuView gameMenu = new GameOptionsMenuView(game);
+        else {
+            return;
+        }
+        GameMenuView gameMenu = new GameMenuView(game);
         gameMenu.getInput(game);
     }
     

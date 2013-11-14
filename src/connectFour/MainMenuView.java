@@ -35,10 +35,10 @@ public class MainMenuView {
             String command = this.getCommand();
             switch (command) {
                 case "1":
-                    this.mainMenuControl.startGame(1);
+                    this.mainMenuControl.startNewGame(1);
                     break;
                 case "2":
-                    this.mainMenuControl.startGame(2);
+                    this.mainMenuControl.startNewGame(2);
                     break;
                 case "H":
                   this.mainMenuControl.displayHelpMenu();

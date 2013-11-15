@@ -61,8 +61,8 @@ public class MainMenuControl {
         
         
         
-        game.setPlayerA = playerA;
-        game.setPlayerB = playerB;
+        game.PlayerA = playerA;
+        game.PlayerB = playerB;
         
         return game;
     }
@@ -85,4 +85,8 @@ public class MainMenuControl {
             throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
     }
+
+    public MainMenuControl() {
+    }
+    
 }

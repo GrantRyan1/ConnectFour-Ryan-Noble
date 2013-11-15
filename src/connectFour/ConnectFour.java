@@ -24,11 +24,12 @@ public class ConnectFour {
        
     }
 
-    static Scanner getInputFile() {
-        return null;
-        
-    }
+    public static Scanner getInputFile() {
+        return ConnectFour.inFile;
+     }
 
+   static Scanner inFile = ConnectFour.getInputFile();
+    
     static HelpMenuView helpMenu() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

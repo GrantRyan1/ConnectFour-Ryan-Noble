@@ -61,8 +61,8 @@ public class MainMenuControl {
         
         
         
-        game.PlayerA = playerA;
-        game.PlayerB = playerB;
+        game.setPlayerA = playerA;
+        game.setPlayerB = playerB;
         
         return game;
     }

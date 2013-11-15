@@ -20,10 +20,6 @@ public class MainMenuView {
     }; 
     
     MainMenuControl mainMenuControl = new MainMenuControl(); 
-        
-    public MainMenuView() {
-        
-    }
     
     public void getInput() {
         
@@ -102,6 +98,19 @@ public final String getCommand() {
     private void Error(String invalid_command_Please_enter_a_vaild_comm) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    public MainMenuView() {
+    }
+
+    public MainMenuControl getMainMenuControl() {
+        return mainMenuControl;
+    }
+
+    public void setMainMenuControl(MainMenuControl mainMenuControl) {
+        this.mainMenuControl = mainMenuControl;
+    }
+
+   
     
    
     

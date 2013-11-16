@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class MainMenuControl {
     
     
-    public null startGame(long noPlayers) {
+    private null startNewGame(int noPlayers) {
         
         if (noPlayers != 1  &&  noPlayers != 2) {
             new ConnectFourError().displayError("startGame wrong number of players entered.");

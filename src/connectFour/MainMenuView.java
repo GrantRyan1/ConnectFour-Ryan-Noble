@@ -35,10 +35,10 @@ public class MainMenuView {
             String command = this.getCommand();
             switch (command) {
                 case "1":
-                    this.mainMenuControl.startGame(1);
+                    this.mainMenuControl.startNewGame(1);
                     break;
                 case "2":
-                    this.mainMenuControl.startGame(2);
+                    this.mainMenuControl.startNewGame(2);
                     break;
                 case "H":
                   this.mainMenuControl.displayHelpMenu();
@@ -95,9 +95,7 @@ public final String getCommand() {
         return false;
     }
 
-    private boolean vaildCommand(String command) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+  
 
     private void Error(String invalid_command_Please_enter_a_vaild_comm) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

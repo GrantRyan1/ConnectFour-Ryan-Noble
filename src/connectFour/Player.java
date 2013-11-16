@@ -51,12 +51,11 @@ public class Player {
     
     public void setMarker(String marker) {
         this.marker = marker;
-    }
+    }     
 
     void setMarker(Object marker) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-        
 }
 
 

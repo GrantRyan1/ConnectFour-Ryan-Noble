@@ -100,7 +100,7 @@ public class Board {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void clearTheBoard() {
+    public void clearBoard() {
         for (int i = 0; i < this.boardLocations.length; i++) {
             Player[] rowlocations = this.boardLocations[i];
             for (int j = 0; j < rowlocations.length; j++) {

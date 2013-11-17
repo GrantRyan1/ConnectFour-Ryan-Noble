@@ -34,7 +34,7 @@ public class PlayGameMenuView {
     public Object getInput(Object object) {
         this.game = (Game) object;
         
-        this.game.setStatus = this.game.getStatus();
+        this.game.Status = this.game.getStatus();
         do {
             
             this.display();
@@ -62,7 +62,7 @@ public class PlayGameMenuView {
                     break;
             }
         } while (!gameStatus.equals("QUIT"));
-        return Game.Playing;
+        return game.PLAYING;
     }
     
     

@@ -17,7 +17,7 @@ public class Game {
     private static Object Playing;
     private String PLAYER_A_DEFAULT_MARKER;
     private String PLAYER_B_DEFAULT_MARKER;
-    private Object Status;
+    public Object Status;
     private Player PlayerA;
     private Player PlayerB;
     public Board board;

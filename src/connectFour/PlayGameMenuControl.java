@@ -43,6 +43,35 @@ public class PlayGameMenuControl {
         HelpMenuView helpMenu = ConnectFour.helpMenu();
         helpMenu.getInput();
     }
+
+    public PlayGameMenuControl(Game game, Board board) {
+        this.game = game;
+        this.board = board;
+    }
+
+    public Game getGame() {
+        return game;
+    }
+
+    public void setGame(Game game) {
+        this.game = game;
+    }
+
+    public Board getBoard() {
+        return board;
+    }
+
+    public void setBoard(Board board) {
+        this.board = board;
+    }
+
+    public BoardView getDisplayBoard() {
+        return displayBoard;
+    }
+
+    public void setDisplayBoard(BoardView displayBoard) {
+        this.displayBoard = displayBoard;
+    }
     
     
 }

@@ -4,6 +4,7 @@
  */
 package connectFour;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
 
@@ -12,7 +13,7 @@ import java.util.Scanner;
  *
  * @author Ryan
  */
-public class HelpMenuView {
+public class HelpMenuView implements Serializable {
     
     
     
@@ -29,6 +30,14 @@ public class HelpMenuView {
     
     
     public HelpMenuView() {
+    }
+
+    public HelpMenuControl getHelpMenuControl() {
+        return helpMenuControl;
+    }
+
+    public void setHelpMenuControl(HelpMenuControl helpMenuControl) {
+        this.helpMenuControl = helpMenuControl;
     }
 
     public String getInput() {

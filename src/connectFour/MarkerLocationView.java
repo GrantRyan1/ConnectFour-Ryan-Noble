@@ -4,6 +4,7 @@
  */
 package connectFour;
 
+import java.awt.Point;
 import java.util.Scanner;
 
 /**
@@ -26,14 +27,21 @@ public class MarkerLocationView {
             Point location = null;
             
             boolean valid = false;
-        
-   //     for
             return null;
-            
+        
             
             
             
         }
+
+
+    public Game getGame() {
+        return game;
+    }
+
+    public void setGame(Game game) {
+        this.game = game;
+    }
         
         
         

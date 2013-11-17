@@ -107,4 +107,35 @@ public class PlayGameMenuView {
         
         return command;
     }
+
+    public PlayGameMenuView(Game game, PlayGameMenuControl playGameMenuControl, Object gameStatus) {
+        this.game = game;
+        this.playGameMenuControl = playGameMenuControl;
+        this.gameStatus = gameStatus;
+    }
+
+    public Game getGame() {
+        return game;
+    }
+
+    public void setGame(Game game) {
+        this.game = game;
+    }
+
+    public PlayGameMenuControl getPlayGameMenuControl() {
+        return playGameMenuControl;
+    }
+
+    public void setPlayGameMenuControl(PlayGameMenuControl playGameMenuControl) {
+        this.playGameMenuControl = playGameMenuControl;
+    }
+
+    public Object getGameStatus() {
+        return gameStatus;
+    }
+
+    public void setGameStatus(Object gameStatus) {
+        this.gameStatus = gameStatus;
+    }
+     
 }

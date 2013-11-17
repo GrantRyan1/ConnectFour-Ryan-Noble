@@ -13,11 +13,19 @@ public class GameOptionsMenuControl {
     
     private Game game;
     private Object marker;
+    public Player PlayerA;
+    public Player PlayerB;
+    public Object dimensions;
+    public Object locations;
     
     public GameOptionsMenuControl() {
     }
-    
-    public Game getgame() {
+
+    GameOptionsMenuControl(Game game) {
+     this.game = game;   
+     this.marker = marker;
+    }
+    public Game getGame() {
         return game;
     }
    
@@ -46,7 +54,7 @@ public class GameOptionsMenuControl {
     
     public boolean saveDimensions(Dimension dimension)  {
         // validate inputs
-        if (this.game.getStatus().equals(Game.PLAYING)) {
+        if (this.game.getStatus().equals(game.PLAYING)) {
             new ConnectFourError().displayError("You can not change the dimensions "
               + "of the board once the game has been started. "
               + "\nStart a new game and then change the dimensions "
@@ -85,22 +93,55 @@ public class GameOptionsMenuControl {
         }
         
         // change the size board
-        Player[][] boardLocations = new Player[boardRowCount][boardColumnCount];
+        Player[][] locations = new Player[boardRowCount][boardColumnCount];
         this.game.getBoard().getDimensions();
         
         
-        Dimension boardDimensions = new Dimension(boardRowCount, boardColumnCount);
+        Dimension dimensions = new Dimension(boardRowCount, boardColumnCount);
         
         return true;
     }
 
-    void getDimensions() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Object getMarker() {
+        return marker;
     }
 
-    void getMarker(Object playerB) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setMarker(Object marker) {
+        this.marker = marker;
     }
+
+    public Player getPlayerA() {
+        return PlayerA;
+    }
+
+    public void setPlayerA(Player PlayerA) {
+        this.PlayerA = PlayerA;
+    }
+
+    public Player getPlayerB() {
+        return PlayerB;
+    }
+
+    public void setPlayerB(Player PlayerB) {
+        this.PlayerB = PlayerB;
+    }
+
+    public Object getDimensions() {
+        return dimensions;
+    }
+
+    public void setDimensions(Object dimensions) {
+        this.dimensions = dimensions;
+    }
+
+    public Object getLocations() {
+        return locations;
+    }
+
+    public void setLocations(Object locations) {
+        this.locations = locations;
+    }
+
 }
 
     

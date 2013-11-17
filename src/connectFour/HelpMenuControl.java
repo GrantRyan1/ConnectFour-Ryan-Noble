@@ -4,15 +4,17 @@
  */
 package connectFour;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Noble
  */
-public class HelpMenuControl {
+public class HelpMenuControl implements Serializable {
    
      public HelpMenuControl() {
-
 }
+     
      public void displayBoardHelp() {
          System.out.println();
          this.displayHelpBoarder();
@@ -73,4 +75,5 @@ public class HelpMenuControl {
             System.out.println(
             "\t=================================================================");
         }
+        
 }

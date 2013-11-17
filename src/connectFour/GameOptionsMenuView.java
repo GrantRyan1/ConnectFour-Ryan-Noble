@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class GameOptionsMenuView {
 
     private Game game;
-    private GameOptionsMenuControl gameOptionsControl = new GameOptionsMenuControl();
+    private GameOptionsMenuControl gameOptionsControl;
     
     private final static String[][] menuItems = {
         {"1", "Change Marker of the First Player"},
@@ -21,15 +21,20 @@ public class GameOptionsMenuView {
         {"D", "Change the dimensions of the board"}, 
         {"Q", "Return to Game Menu"}
     };
-    private Object gameOptionsMenuControl;
+    private final GameOptionsMenuControl GameOptionsMenuControl;
+  
     
-    public GameOptionsMenuView() {
-       }
+
+    public GameOptionsMenuView(Game game) {
+       this.game = game;
+       this.GameOptionsMenuControl = new GameOptionsMenuControl(game);
+    
+    }
    
     
     public Object getInput(Object object) {
         this.game = (Game) object;
-        this.gameOptionsControl.setGame(game);
+        this.GameOptionsMenuControl.setGame(game);
         
         String gameStatus = Game.PLAYING;
         do {
@@ -39,10 +44,10 @@ public class GameOptionsMenuView {
             String command = this.getCommand();
             switch (command)  {
                case "1":
-                    this.gameOptionsControl.getMarker(this.game.getPlayerA());
+                    this.gameOptionsControl.getPlayerA();
                     break;
                 case "2":
-                    this.gameOptionsControl.getMarker(this.game.getPlayerB());
+                    this.gameOptionsControl.getPlayerB();
                     break;
                 case "D":
                     this.gameOptionsControl.getDimensions();

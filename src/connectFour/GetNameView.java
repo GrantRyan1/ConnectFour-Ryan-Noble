@@ -16,12 +16,12 @@ public class GetNameView {
     private boolean playerName;
         
         
-        public GetNameView(Player player) {
+        private GetNameView(Player player) {
             this.player = player;
         }
         
         
-        public String getInput() {
+        private String getInput() {
             String playerName = null;
             
             boolean valid= false;

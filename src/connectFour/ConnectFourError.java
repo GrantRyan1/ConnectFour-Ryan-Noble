@@ -13,11 +13,11 @@ class ConnectFourError {
     public ConnectFourError() {
     }
 
-    void displayError(String invalid_input_Enter_valid_input) {
+    public void displayError(String invalid_input_Enter_valid_input) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void display(String mainCommands__create_gameType_is_null) {
+    public void display(String mainCommands__create_gameType_is_null) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

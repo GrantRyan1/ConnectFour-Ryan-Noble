@@ -25,7 +25,7 @@ public class GameOptionsMenuControl {
      this.game = game;   
      this.marker = marker;
     }
-    public Game getGame() {
+    public Game getgame() {
         return game;
     }
    

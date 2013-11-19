@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class MainMenuControl {
     
     
-    private null startNewGame(int noPlayers) {
+    public startNewGame(long noPlayers) { //Checks for Players to start new game.//
         
         if (noPlayers != 1  &&  noPlayers != 2) {
             new ConnectFourError().displayError("startGame wrong number of players entered.");
@@ -29,7 +29,7 @@ public class MainMenuControl {
         else {
             return;
         }
-        GameMenuView gameMenu = new GameMenuView(game);
+        PlayGameMenuView gameMenu = new PlayGameMenuView(game);
         gameMenu.getInput(game);
     }
     
@@ -66,8 +66,10 @@ public class MainMenuControl {
         
         return game;
     }
-    void displayHelpMenu() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+    public void displayHelpMenu() {
+        HelpMenuView helpMenuView = new HelpMenuView();
+        helpMenuView.getInput();
     }
 
     private static class GameMenuView {
@@ -75,12 +77,16 @@ public class MainMenuControl {
         public GameMenuView() {
         }
 
-        private GameMenuView(Game game) {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
+       
+
+      
 
         private void getInput(Game game) {
             throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
     }
+
+    public MainMenuControl() {
+    }
+    
 }

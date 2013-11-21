@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author Ryan
  */
-public class GameOptionsMenuView {
+public class GameOptionsMenuView extends Menu {
 
     private Game game;
     private GameOptionsMenuControl gameOptionsControl;
@@ -61,6 +61,9 @@ public class GameOptionsMenuView {
         return gameStatus;
     }
 
+    
+    
+    @Override
     public final void display() {
         System.out.println("\n\t===============================================================");
         System.out.println("\tEnter the letter associated with one of the following commands:");
@@ -82,7 +85,7 @@ public class GameOptionsMenuView {
         return false;
     }
     
-    protected final String getCommand() {
+    public final String getCommand() {
 
         Scanner inFile = ConnectFour.getInputFile();
         String command;
@@ -99,6 +102,11 @@ public class GameOptionsMenuView {
         } while (!valid);
         
         return command;
+    }
+
+    @Override
+    public void menuItems() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author Noble
  */
-public class MainMenuControl extends Menu {
+public abstract class MainMenuControl extends Menu {
     
     
     public startNewGame(long noPlayers) { //Checks for Players to start new game.//
@@ -70,6 +70,11 @@ public class MainMenuControl extends Menu {
     public void displayHelpMenu() {
         HelpMenuView helpMenuView = new HelpMenuView();
         helpMenuView.getInput();
+    }
+
+    @Override
+    public String getCommand() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     private static class GameMenuView {

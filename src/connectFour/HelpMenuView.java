@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * @author Ryan
  */
-public class HelpMenuView implements Serializable {
+public class HelpMenuView extends Menu {
     
     
     
@@ -74,6 +74,9 @@ public class HelpMenuView implements Serializable {
            }
 
            //display the menu
+    
+    
+    @Override
     public final void display() {
         System.out.println("\n\t================================================================");
         System.out.println("\tEnter the letter of the option you wish to choose:");
@@ -85,7 +88,8 @@ public class HelpMenuView implements Serializable {
         
     }
                 //gets the command from the user input
-    protected final String getCommand() {
+    @Override
+    public final String getCommand() {
         
         Scanner inFile = ConnectFour.getInputFile();
         
@@ -113,4 +117,9 @@ public class HelpMenuView implements Serializable {
        }
         return false;
  }
+
+    @Override
+    public void menuItems() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

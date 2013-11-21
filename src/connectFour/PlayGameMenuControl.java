@@ -34,7 +34,9 @@ public class PlayGameMenuControl {
     }
     
     public void displayOptionsMenu() {
-        GameOptionsMenuView gameOptionsMenu = ConnectFour.gameOptionsMenuView();
+        
+        
+        GameOptionsMenuView gameOptionsMenu = GameOptionsMenuView.GameOptionsMenuView();
         gameOptionsMenu.getInput(this.game);
     }
     

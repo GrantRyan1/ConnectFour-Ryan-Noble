@@ -11,7 +11,7 @@ package connectFour;
  *
  * @author Ryan
  */
-public class PlayGameMenuView {
+public class PlayGameMenuView extends Menu {
  
     private Game game;
     private PlayGameMenuControl playGameMenuControl;
@@ -66,8 +66,12 @@ public class PlayGameMenuView {
     }
     
     
+    /**
+     *
+     */
     
-    public final void display() {
+    @Override
+    public void display() {
         System.out.println("\n\t===============================================================");
         System.out.println("\tEnter the letter associated with one of the following commands:");
 
@@ -89,7 +93,7 @@ public class PlayGameMenuView {
         return false;
     }
     
-     protected final String getCommand() {
+     public final String getCommand() {
 
         Scanner inFile = ConnectFour.getInputFile();
         String command;
@@ -136,6 +140,11 @@ public class PlayGameMenuView {
 
     public void setGameStatus(Object gameStatus) {
         this.gameStatus = gameStatus;
+    }
+
+    @Override
+    public void menuItems() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
      
 }

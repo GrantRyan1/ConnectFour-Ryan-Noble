@@ -13,7 +13,7 @@ public class MainMenuView extends Menu {
     
      
 
-    private static final String[][] menuItems = {
+    public static final String[][] menuItems = {
         {"1", "One player game"},
         {"2", "Two player game"},
         {"H", "Help"},

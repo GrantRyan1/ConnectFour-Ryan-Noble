@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author Noble
  */
-public class MainMenuControl {
+public class MainMenuControl extends Menu {
     
     
     public startNewGame(long noPlayers) { //Checks for Players to start new game.//

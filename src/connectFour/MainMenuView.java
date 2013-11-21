@@ -9,8 +9,9 @@ import java.util.Scanner;
  *
  * @author Noble
  */
-public class MainMenuView {
+public class MainMenuView extends Menu {
     
+     
 
     private static final String[][] menuItems = {
         {"1", "One player game"},
@@ -21,6 +22,9 @@ public class MainMenuView {
     
     MainMenuControl mainMenuControl = new MainMenuControl(); 
     
+     public MainMenuView() {
+        super(MainMenuView.menuItems);
+    }
     public void getInput() {
         
         String gameStatus = Game.PLAYING;
@@ -49,7 +53,10 @@ public class MainMenuView {
         return;
 }
     
-public final String getCommand() {
+    
+    
+    @Override
+    public final String getCommand() {
 
         Scanner inFile = new Scanner(System.in);
         String command;
@@ -70,15 +77,7 @@ public final String getCommand() {
    }
 
 
- public final void display() {
-        System.out.println("\n\t===============================================================");
-        System.out.println("\tEnter the letter associated with one of the following commands:");
 
-        for (int i = 0; i < MainMenuView.menuItems.length; i++) {
-            System.out.println("\t   " + menuItems[i][0] + "\t" + menuItems[i][1]);
-        }
-        System.out.println("\t===============================================================\n");
-    }
 
     private boolean validCommand(String command) {
         String[][] items = MainMenuView.menuItems;
@@ -96,10 +95,7 @@ public final String getCommand() {
     private void Error(String invalid_command_Please_enter_a_vaild_comm) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    public MainMenuView() {
-    }
-
+    
     public MainMenuControl getMainMenuControl() {
         return mainMenuControl;
     }

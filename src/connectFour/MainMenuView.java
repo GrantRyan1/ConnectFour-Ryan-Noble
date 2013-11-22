@@ -20,7 +20,13 @@ public class MainMenuView extends Menu {
         {"X", "Exit Connect Four"}
     }; 
     
-    MainMenuControl mainMenuControl = new MainMenuControl(); 
+    MainMenuControl mainMenuControl = new MainMenuControl() {
+
+        @Override
+        public void menuItems() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+    }; 
     
      public MainMenuView() {
         super(MainMenuView.menuItems);
@@ -102,6 +108,11 @@ public class MainMenuView extends Menu {
 
     public void setMainMenuControl(MainMenuControl mainMenuControl) {
         this.mainMenuControl = mainMenuControl;
+    }
+
+    @Override
+    public void menuItems() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
    

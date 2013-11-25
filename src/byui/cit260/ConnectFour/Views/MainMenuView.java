@@ -2,8 +2,13 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package connectFour;
+package byui.cit260.ConnectFour.Views;
 
+import byui.cit260.ConnectFour.Views.HelpMenuView;
+import byui.cit260.ConnectFour.Controls.MainMenuControl;
+import byui.cit260.ConnectFour.Controls.ConnectFour;
+import byui.cit260.ConnectFour.Controls.ConnectFourError;
+import byui.cit260.ConnectFour.Models.Game;
 import java.util.Scanner;
 /**
  *
@@ -20,7 +25,13 @@ public class MainMenuView extends Menu {
         {"X", "Exit Connect Four"}
     }; 
     
-    MainMenuControl mainMenuControl = new MainMenuControl(); 
+    MainMenuControl mainMenuControl = new MainMenuControl() {
+
+        @Override
+        public void menuItems() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+    }; 
     
      public MainMenuView() {
         super(MainMenuView.menuItems);
@@ -102,6 +113,11 @@ public class MainMenuView extends Menu {
 
     public void setMainMenuControl(MainMenuControl mainMenuControl) {
         this.mainMenuControl = mainMenuControl;
+    }
+
+    @Override
+    public void menuItems() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
    

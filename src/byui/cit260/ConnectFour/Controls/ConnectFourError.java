@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package connectFour;
+package byui.cit260.ConnectFour.Controls;
 
 /**
  *

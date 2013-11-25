@@ -2,17 +2,18 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package connectFour;
+package byui.cit260.ConnectFour.Models;
 
 /**
  *
  * @author Ryan
  */
-public class Player {
+public abstract class Player {
     
     public static final String REGULAR_PLAYER = "REGULAR";
     public static final String COMPUTER_PLAYER = "COMPUTER"; 
-
+    public static final String ENHANCED_PLAYER = "ENHANCED_PLAYER";
+    
     private String name;
     private String playerType;
     public String marker;

@@ -11,7 +11,7 @@ import byui.cit260.ConnectFour.Models.Player;
  *
  * @author Ryan
  */
-public class BoardView {
+public class BoardView implements DisplayInfo{
  
     Board board;    
     

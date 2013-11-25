@@ -8,6 +8,11 @@ package byui.cit260.ConnectFour.Interfaces;
  *
  * @author Noble
  */
-public class DisplayInfo {
+public interface DisplayInfo {
+    /**
+     *
+     */
+    Object display(Object object);
+    
     
 }

@@ -11,7 +11,7 @@ import java.awt.Dimension;
  *
  * @author Noble
  */
-public class GameOptionsMenuControl {
+public class GameOptionsMenuControl extends Player {
     
     private Game game;
     private Object marker;

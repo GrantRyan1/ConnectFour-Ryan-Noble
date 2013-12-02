@@ -2,8 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package connectFour;
+package byui.cit260.ConnectFour.Controls;
 
+import byui.cit260.ConnectFour.Models.Player;
+import byui.cit260.ConnectFour.Models.Game;
 import java.util.Scanner;
 /**
  *

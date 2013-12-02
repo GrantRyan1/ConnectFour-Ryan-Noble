@@ -2,8 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package connectFour;
+package byui.cit260.ConnectFour.Views;
 
+import byui.cit260.ConnectFour.Views.MainMenuView;
 import java.util.Scanner;
 /**
  *
@@ -38,7 +39,7 @@ public abstract class Menu {
         System.out.println("\t===============================================================\n");
     }
     
-    public abstract void menuItems();
+    public abstract menuItems();
     
      private boolean validCommand(String command) {
         String[][] items = this.menuItems;
@@ -52,5 +53,6 @@ public abstract class Menu {
     }
      public abstract String getCommand();
      
+    
     
 }

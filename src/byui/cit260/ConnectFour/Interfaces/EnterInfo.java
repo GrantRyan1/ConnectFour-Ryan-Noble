@@ -8,6 +8,8 @@ package byui.cit260.ConnectFour.Interfaces;
  *
  * @author Noble
  */
-public class EnterInfo {
-    
+public interface EnterInfo {
+    Object getInput(Object object ); 
 }
+
+

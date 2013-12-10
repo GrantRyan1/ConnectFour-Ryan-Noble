@@ -57,10 +57,7 @@ public class PlayerEnhanced extends Player {
         return marker;
     }
     
-    @Override
-    public void setMarker(String marker) {
-        this.marker = marker;
-    }     
+
 
     @Override
     void setMarker(Object marker) {
